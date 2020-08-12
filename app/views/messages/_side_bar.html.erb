@@ -1,8 +1,9 @@
 <div class="side_header">
   <div class="current_user_name">
-    <%= link_to edit_user_path(current_user) do %>
-      <%= current_user.name %>
-    <% end %>
+  <%= link_to "#{current_user.name}", edit_user_path(current_user) %>
+    <%#= link_to edit_user_path(current_user) do %>
+      <%#= current_user.name %>
+    <%# end %> 
   </div>
   <div class="make_room">
     チャットを作成する
