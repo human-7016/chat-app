@@ -17,10 +17,10 @@
   align-items: center;
 }
 
-.current_user_name{
+.current_user_name a{
   color: #FAFAFA;
   font-size: 16px;
-  
+  text-decoration: none;
 }
 
 .make_room{
