@@ -26,6 +26,11 @@
 .make_room{
   border: solid 1px lightblue;
   padding: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.make_room a{
   color:deepskyblue;
   font-size: 10px;
 }

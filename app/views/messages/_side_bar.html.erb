@@ -6,15 +6,15 @@
     <%# end %> 
   </div>
   <div class="make_room">
-    チャットを作成する
+    <%= link_to "チャットを作成する", new_room_path %>
   </div>
 </div>
 
 <ul class="room_list">
-  <li class = "room_name">
-    <a href='#'>techroom1(tentative)</a>
-  </li>
-  <li class = "room_name">
-    <a href='#'>techroom2(tentative)</a>
-  </li>
+  <% current_user.rooms.each do |room| %>
+    <li class = "room_name">
+      <a href='#'><%= room.name %></a>
+    </li>
+  <% end %>
 </ul>
+  
